@@ -6,7 +6,7 @@ const login = async (userInfo: UserLogin) => {
     const response = await fetch('/auth/login', {
       method: 'POST',
       headers: {
-        'Content=Type': 'application/json'
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(userInfo)
     });
@@ -25,3 +25,4 @@ const login = async (userInfo: UserLogin) => {
 };
 
 export { login }; // Export the login function to be used elsewhere in the application
+
